@@ -1,7 +1,7 @@
 import pandas
 import re
 
-table = pandas.read_csv('test_data - copy.csv')
+table = pandas.read_csv('test_data.csv')
 
 names = open("Names.txt")
 x = names.read().lower()
@@ -124,6 +124,6 @@ pars_e(0, 0)
 print()
 pars_f()
 print()
-print("СОЗДАН НОВЫЙ CSV-ФАЙЛ С СООТВЕТСТВУЮЩИМИ ОМЕТКАМИ")
+print("СОЗДАН НОВЫЙ CSV-ФАЙЛ С СООТВЕТСТВУЮЩИМИ ОТМЕТКАМИ")
 
 table.to_csv('new.csv', index=False)
